@@ -13,7 +13,7 @@
     <h2>Games I am playing right now</h2>
     <h3>Games are as follows:</h3>
     <ul>
-        @foreach ($games as $game)
+        @foreach($games as $game)
             <li>
                 <a href="/info/{{ $game["id"] }}">{{ $game["name"] }}</a>
             </li>
