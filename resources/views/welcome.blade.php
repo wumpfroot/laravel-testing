@@ -7,6 +7,6 @@
 <body>
     <h1>Hello Laravel!</h1>
     <p>Click below: </p>
-    <a href="/info" class="btn">Find info</a>
+    <a href="/games" class="btn">Find info</a>
 </body>
 </html>

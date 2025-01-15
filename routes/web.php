@@ -7,16 +7,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/info', function () {
+Route::get('/games', function () {
     $games = [
         ["name" => "Path of Exile", "studio" => "Grinding Gear Games", "id" => "1"],
         ["name" => "Marvel Rivals", "studio" => "NetEase Games", "id" => "2"],
         ["name" => "Balatro", "studio" => "LocalThunk", "id" => "3"]
     ];
-    return view('info.index', ["greeting" => True, "games" => $games]);
+    return view('games.index', ["greeting" => True, "games" => $games]);
 });
 
-Route::get('/info/{id}', function ($id) {
+Route::get('/games/add', function () {
+    return view('games.add');
+});
+
+Route::get('/games/{id}', function ($id) {
     // fetch game with id
-    return view('info.show', ["id" => $id]);
+    return view('games.show', ["id" => $id]);
 });
