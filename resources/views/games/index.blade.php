@@ -10,7 +10,7 @@
         @foreach($games as $game)
             <li>
                 <x-card href="/games/{{ $game['id'] }}" :highlight="$game['name'] == 'Balatro'">
-                    <h3>{{ $game['name'] }}</h3>
+                    <h3 class="text-xl font-semibold">{{ $game['name'] }}</h3>
                 </x-card>
             </li>
         @endforeach

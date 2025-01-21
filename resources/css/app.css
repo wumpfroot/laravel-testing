@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+h2 {
+    @apply text-2xl font-semibold;
+}
+
+button {
+    @apply rounded p-2 bg-red-500 hover:bg-red-400 mb-5;
+}
+
+.highlight {
+    @apply text-red-700;
+}
