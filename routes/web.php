@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/games', function () {
     $games = [
-        ["name" => "Path of Exile", "studio" => "Grinding Gear Games", "id" => "1"],
+        ["name" => "Path of Exile 2", "studio" => "Grinding Gear Games", "id" => "1"],
         ["name" => "Marvel Rivals", "studio" => "NetEase Games", "id" => "2"],
         ["name" => "Balatro", "studio" => "LocalThunk", "id" => "3"]
     ];

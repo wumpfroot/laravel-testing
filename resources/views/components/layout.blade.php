@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Testing</title>
+    @vite('resources/css/app.css')
+
 </head>
 <body>
     <header>
@@ -13,7 +15,7 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container mx-auto text-center">
         {{ $slot }}
     </main>
 </body>
